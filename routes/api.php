@@ -21,3 +21,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 // Endpoint para obtener información sobre las TV Box de los clientes
 Route::get('/tvbox-info', [TvboxApiController::class, 'tvboxInfo']);
+
+
+Route::get('/tvbox-info/{codigo_tvbox}', [TvboxApiController::class, 'getTvboxInfo']);
