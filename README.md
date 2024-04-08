@@ -27,7 +27,7 @@ Este es un proyecto desarrollado en **Laravel** para la gestión de TV Box utili
 
 ## Uso
 
-Puedes acceder al panel de administración en [http://localhost:8000/admin](http://localhost:8000/admin) para gestionar clientes y TV Box. La API está disponible en [[http://localhost:8000/api](http://crud-filament.test/api/tvbox-info)]([http://localhost:8000/api](http://crud-filament.test/api/tvbox-info)).http://crud-filament.test/api/tvbox-info
+Puedes acceder al panel de administración en [http://localhost:8000/admin](http://localhost:8000/admin) para gestionar clientes y TV Box. La API está disponible en [(http://crud-filament.test/api/tvbox-info)](http://crud-filament.test/api/tvbox-info).
 
 ### Ejemplo de solicitud API
 
