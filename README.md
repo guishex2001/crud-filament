@@ -5,7 +5,7 @@ Este es un proyecto desarrollado en **Laravel** para la gestión de TV Box utili
 ## Características
 
 - **CRUD** completo para clientes y TV Box.
-- Estado de pago de TV Box gestionado automáticamente según la fecha de vencimiento.
+- Estado de pago de TV Box gestionado automáticamente según la fecha de vencimiento. (trabajando en ello)
 - **API RESTful** para acceder a la información de las TV Box.
 
 ## Requisitos
