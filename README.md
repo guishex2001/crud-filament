@@ -20,9 +20,9 @@ Este es un proyecto desarrollado en **Laravel** para la gestión de TV Box utili
 1. **Clona** el repositorio: `git clone <URL del repositorio>`
 2. **Instala** las dependencias: `composer install`
 3. **Copia** el archivo de entorno: `cp .env.example .env`
-4. **Genera un usuario** Ejecuta: `php artisan filament:user` y llena los campos
-5. **Configura** la conexión a la base de datos en el archivo `.env`
-6. **Ejecuta** las migraciones: `php artisan migrate`
+4. **Configura** la conexión a la base de datos en el archivo `.env`
+5. **Ejecuta** las migraciones: `php artisan migrate`
+6. **Genera un usuario** Ejecuta: `php artisan filament:user` y llena los campos
 7. **Inicia** el servidor: `php artisan serve`
 
 ## Uso
