@@ -21,6 +21,8 @@ jobs:
     - name: Install dependencies
       run: composer install --no-dev --prefer-dist --no-scripts --no-progress --no-suggest
 
+      
+
     - name: Configure env
       env:
         FTP_HOST: ${{ secrets.FTP_HOST }}
@@ -36,3 +38,5 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         server-dir: ${{ secrets.FTP_DESTINATION }}
+        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+    
