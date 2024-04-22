@@ -23,30 +23,29 @@ class ClientResource extends Resource
     {
         return $form->schema([
             Forms\Components\TextInput::make('nombre')->label('Nombre'),
-            Forms\Components\Datepicker::make('fecha_pago')->label('Fecha de pago'),
-            Forms\Components\Datepicker::make('fecha_vencimiento')->label('Fecha de vencimiento'),
+            Forms\Components\DatePicker::make('fecha_pago')->label('Fecha de pago')->placeholder('Fecha de pago'), // Modificado
+            Forms\Components\DatePicker::make('fecha_vencimiento')->label('Fecha de vencimiento'),
             // Aquí cambiamos Boolean::make por Toggle::make
             Forms\Components\Toggle::make('estado_pago')->label('Estado de pago'),
         ]);
     }
 
-
     public static function table(Table $table): Table
-{
-    return $table
-        ->columns([
-            Tables\Columns\TextColumn::make('nombre')->label('Nombre')->searchable(),
-            Tables\Columns\TextColumn::make('fecha_pago')->label('Fecha de Pago')->date(),
-            Tables\Columns\TextColumn::make('fecha_vencimiento')->label('Fecha de Vencimiento')->date(),
-            Tables\Columns\BooleanColumn::make('estado_pago')
-    ->label('Estado de Pago')
-    ->trueIcon('heroicon-s-check')
-    ->falseIcon('heroicon-s-x-mark')
-    ->colors([
-        'true' => 'success',
-        'false' => 'danger',
-    ]),
-        ])
+    {
+        return $table
+            ->columns([
+                Tables\Columns\TextColumn::make('nombre')->label('Nombre')->searchable(),
+                Tables\Columns\TextColumn::make('fecha_pago')->label('Fecha de Pago')->date(),
+                Tables\Columns\TextColumn::make('fecha_vencimiento')->label('Fecha de Vencimiento')->date(),
+                Tables\Columns\BooleanColumn::make('estado_pago')
+                    ->label('Estado de Pago')
+                    ->trueIcon('heroicon-s-check')
+                    ->falseIcon('heroicon-s-x-mark')
+                    ->colors([
+                        'true' => 'success',
+                        'false' => 'danger',
+                    ]),
+            ])
             ->filters([
                 //
             ])
