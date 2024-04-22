@@ -23,8 +23,8 @@ class ClientResource extends Resource
     {
         return $form->schema([
             Forms\Components\TextInput::make('nombre')->label('Nombre'),
-            Forms\Components\DatePicker::make('fecha_pago')->label('Fecha de pago')->placeholder('Fecha de pago'), // Modificado
-            Forms\Components\DatePicker::make('fecha_vencimiento')->label('Fecha de vencimiento'),
+            Forms\Components\Datepicker::make('fecha_pago')->label('Fecha de pago')->placeholder('Fecha de pago'), // Modificado
+            Forms\Components\Datepicker::make('fecha_vencimiento')->label('Fecha de vencimiento'),
             // Aquí cambiamos Boolean::make por Toggle::make
             Forms\Components\Toggle::make('estado_pago')->label('Estado de pago'),
         ]);
