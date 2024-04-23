@@ -13,7 +13,6 @@ class CreateClientsTable extends Migration
             $table->string('nombre');
             $table->date('fecha_pago')->nullable();
             $table->date('fecha_vencimiento')->nullable();
-            $table->boolean('estado_pago')->default(false);
             $table->timestamps();
             $table->engine = 'InnoDB';
         });
