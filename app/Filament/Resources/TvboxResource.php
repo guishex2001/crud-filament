@@ -31,7 +31,7 @@ class TvboxResource extends Resource
         Forms\Components\TextInput::make('codigo')
             ->required()
             ->maxLength(191),
-        Forms\Components\DatePicker::make('fecha_vencimiento'),
+
     ]);
     }
 
