@@ -7,7 +7,7 @@ use Illuminate\Support\Carbon;
 
 class Tvbox extends Model
 {
-    protected $fillable = ['client_id', 'codigo', 'fecha_vencimiento'];
+    protected $fillable = ['client_id', 'codigo'];
 
     protected $casts = [
         'fecha_vencimiento' => 'datetime',
