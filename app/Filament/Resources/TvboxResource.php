@@ -44,9 +44,7 @@ class TvboxResource extends Resource
                     ->sortable(),
                 Tables\Columns\TextColumn::make('codigo')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('fecha_vencimiento')
-                    ->date()
-                    ->sortable(),
+
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
